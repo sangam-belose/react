@@ -1,0 +1,31 @@
+{
+  "name": "react-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "query": {
+    "presets": "['@babel/react', '@babel/es2015']",
+    "plugins": "['@babel/proposal-class-properties']"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.4",
+    "@babel/preset-env": "7.21.4",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "babel-loader": "^8.0.0-beta.0",
+    "html-webpack-plugin": "^5.5.1",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  }
+}
